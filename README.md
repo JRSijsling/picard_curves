@@ -49,4 +49,4 @@ References
 
 This implementation is based on the following work. When using this package, please be aware of the work that you are indirectly applying and please cite it.
 
-* I.I. Bouw, J. Sijsling, S. Wewers, [Conductor and discriminant of Picard curves](https://arxiv.org/abs/1902.TOAPPEAR)
+* Irene Bouw, Angelos Koutsianas, Jeroen Sijsling, and Stefan Wewers, [Conductor and discriminant of Picard curves](https://arxiv.org/abs/1902.TOAPPEAR)
