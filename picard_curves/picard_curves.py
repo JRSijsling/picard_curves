@@ -210,11 +210,15 @@ class PicardDatabase(SageObject):
         return sorted(Ys, key = disc_prod)
 
     def sorted_by_conductor(self):
-        Ys = [ Y for Y in self.curves if len(Y.cond) > 1 ]
+        def test(Y):
+            if Y.special:
+                return 2 in [ p for p, e in Y.cond ]
+            return 3 in [ p for p, e in Y.cond ]
+        Ys = [ Y for Y in self.curves if test(Y) ]
         cond_prod = lambda Y : prod([ l[0]**l[1] for l in Y.cond ])
         return sorted(Ys, key = cond_prod)
 
-    @fork(timeout=120)
+    @fork(timeout=600)
     def calculate_pol_fork(self, f, special = False, dowild = True, calccond = True):
         test, Y = self.in_database_pol(f, special = special)
         if not test:

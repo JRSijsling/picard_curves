@@ -123,14 +123,15 @@ end if;
 
 cs0 := ArithmeticInvariants(f0);
 css := [ cs0 ];
-/* We have to check at 2 every time: astonishingly, twisting at 3 can change
- * the minimal discriminant at 2 */
 for p in ps do
     css := &cat[ TwistsAtPrime(cs, p) : cs in css ];
 end for;
 if cs0[2] eq 0 then
     css := &cat[ TwistsAtSign(cs) : cs in css ];
 end if;
+
+/* We have to check at 2 every time; surprisingly, twisting at 3 can change the
+ * minimal discriminant at 2 */
 if not 2 in ps then
     csschecked := [ ];
     for cs in css do
