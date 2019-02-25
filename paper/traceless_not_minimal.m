@@ -47,16 +47,20 @@ for tup in tups do
     end if;
 end for;
 
+/*
 print "";
 print "Minimal valuations for traceless model:";
 print valmin;
 print mins;
+*/
 
 la, mu, nu := Explode(mins[1]);
 F3 := p^la * Evaluate(F2, [ p^nu*x, p^mu*y, z ]);
 print "";
 print "Traceless model:";
 print F3;
+print "Discriminant valuation:";
+print Valuation(QuarticDiscriminant(F3), p);
 
 w3 := Valuation(MonomialCoefficient(F3, x^3*z^1), p);
 v4 := Valuation(MonomialCoefficient(F3, y^4*z^0), p);
