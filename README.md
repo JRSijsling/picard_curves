@@ -38,7 +38,7 @@ sage: from picard_curves import *
 Usage
 --
 
-Examples, both in Magma and in SageMath, are given in the directories starting with `examples`. We refer to the files in these directories for more details. In particular, try starting with `examples_magma/curves.m` and `examples_magma/curves.sage`.
+Examples, both in Magma and in SageMath, are given in the directories starting with `examples`. We refer to the files in these directories for more details. In particular, try starting with `examples_magma/curves.m` and `examples_sage/curves.sage`.
 
 The creation of database files in SageMath and the interaction with them is described in the directory `database/`. Reading and using these databases is described in the file `examples_sage/inspect_database.sage`.
 
