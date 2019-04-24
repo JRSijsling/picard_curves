@@ -7,9 +7,7 @@ This repository gives a set of algorithms for calculating with Picard curves, as
 
 Prerequisites
 --
-An installation of both Magma and SageMath is required to run all of the code. In addition, you need to install the Magma package [`echidna`](http://iml.univ-mrs.fr/~kohel/alg/index.html) by David Kohel to gain access to an implementation of the Dixmier--Ohno invariants.
-
-You will also benefit from installing a recent version of [`MCLF/mclf`](https://github.com/MCLF/mclf), but this is not mandatory.
+An installation of both Magma and SageMath is required to run all of the code. You will also benefit from installing a recent version of [`MCLF/mclf`](https://github.com/MCLF/mclf), but this is not mandatory.
 
 Magma installation 
 --
@@ -43,6 +41,11 @@ Examples, both in Magma and in SageMath, are given in the directories starting w
 The creation of database files in SageMath and the interaction with them is described in the directory `database/`. Reading and using these databases is described in the file `examples_sage/inspect_database.sage`.
 
 Finally, some files confirming results in the database are given in the directory `paper/`.
+
+Credits
+--
+
+This package uses code from the Magma package [`echidna`](http://iml.univ-mrs.fr/~kohel/alg/index.html) by David Kohel for an implementation of the Dixmier--Ohno invariants.
 
 References
 --
